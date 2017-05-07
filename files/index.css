@@ -139,6 +139,10 @@ a {
   max-width: 16.666666666666668%;
 }
 
+.-grow {
+  flex: 1;
+}
+
 .icon {
   fill: currentColor;
 }
@@ -146,6 +150,21 @@ a {
 .icon.-size-24 svg {
   display: block;
   height: 24px;
+}
+
+.button {
+  height: 32px;
+  padding: 0 16px;
+  background: #9933bb;
+  border-radius: 2px;
+  line-height: 32px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #b038d5;
 }
 
 .wrapper {
@@ -183,5 +202,11 @@ a {
   .main {
     padding-right: 0;
     padding-bottom: 24px;
+  }
+}
+
+@media print {
+  .-hide-print {
+    display: none;
   }
 }

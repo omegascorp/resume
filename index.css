@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+  color: #222222;
+  background: #FAFAFA;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0 0 16px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  border-bottom: 2px solid #9933bb;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+p {
+  margin: 0 0 8px 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #00bbdd;
+}
+
+.-layout-h {
+  display: flex;
+  flex-direction: row;
+}
+
+.-layout-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.-wrap {
+  flex-wrap: wrap;
+}
+
+.-space-h-8 > * {
+  margin-right: 8px;
+}
+
+.-space-h-16 > * {
+  margin-right: 16px;
+}
+
+.-space-h-24 > * {
+  margin-right: 24px;
+}
+
+.-space-h-8 > *:last-child,
+.-space-h-16 > *:last-child,
+.-space-h-24 > *:last-child {
+ margin-right: 0;
+}
+
+.-space-v-8 > * {
+  margin-bottom: 8px;
+}
+
+.-space-v-16 > * {
+  margin-bottom: 16px;
+}
+
+.-space-v-24 > * {
+  margin-bottom: 24px;
+}
+
+.-space-v-8 > *:last-child,
+.-space-v-16 > *:last-child,
+.-space-v-24 > *:last-child {
+  margin-bottom: 0;
+}
+
+.-align-center {
+  align-items: center;
+}
+
+.-justify-between {
+  justify-content: space-between;
+}
+
+.-grid-10 {
+  flex-basis: 83.33333333333334%;
+  max-width: 83.33333333333334%;
+}
+
+.-grid-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.-grid-8 {
+  flex-basis: 66.66666666666667%;
+  max-width: 66.66666666666667%;
+}
+
+.-grid-4 {
+  flex-basis: 33.333333333333336%;
+  max-width: 33.333333333333336%;
+}
+
+.-grid-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.-grid-2 {
+  flex-basis: 16.666666666666668%;
+  max-width: 16.666666666666668%;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.icon.-size-24 svg {
+  display: block;
+  height: 24px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.header {
+  padding-bottom: 24px;
+}
+
+.header--avatar img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.secondary {
+  font-size: 14px;
+  color: #777777;
+  font-style: italic;
+}
+
+.main {
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .-grid-2, .-grid-3, .-grid-4, .-grid-8, .-grid-9, .-grid-10 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .main {
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+}

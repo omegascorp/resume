@@ -124,6 +124,10 @@ ul li:before {
   flex-wrap: wrap;
 }
 
+.-space-h-4 > * {
+  margin-right: 4px;
+}
+
 .-space-h-8 > * {
   margin-right: 8px;
 }
@@ -257,6 +261,11 @@ ul li:before {
 
 .icon {
   fill: currentColor;
+}
+
+.icon.-size-16 svg {
+  display: block;
+  height: 16px;
 }
 
 .icon.-size-24 svg {
